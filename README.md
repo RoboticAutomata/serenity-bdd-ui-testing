@@ -1,25 +1,52 @@
-# Serenity JUnit Starter project
+# UI Test Automation with Serenity BDD
 
-Get started quickly with Serenity BDD and JUnit 5 using Page Objects and Action Classes with this simple starter project. 
+An example UI Test Automation using Serenity, Cucumber and the Page Object Model.
 
-## Get the code
 
-Click on the [Use This Template button](https://github.com/serenity-bdd/serenity-junit-starter/generate) to create a new project in your own Github account. 
+<!--ts-->
+* [UI Test Automation with Serenity BDD](#ui-test-automation-with-serenity-bdd)
+   * [Application under Test](#application-under-test)
+   * [Example Scenario to Automate](#example-scenario-to-automate)
+      * [Login Page](#login-page)
+      * [Add User Page](#add-user-page)
+      * [Contact List](#contact-list)
+   * [Running the tests under Maven](#running-the-tests-under-maven)
+   * [Viewing the reports](#viewing-the-reports)
+   * [Resources](#resources)
 
-Or simply [download a zip](https://github.com/serenity-bdd/serenity-junit-starter/archive/master.zip) file.
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: rashad, at: Sat Feb 17 06:26:41 PM EST 2024 -->
+
+<!--te-->
+
+## Application under Test
+
+We will be testing the [Thinking Tester Contact List App](https://thinking-tester-contact-list.herokuapp.com/) `CLA` for short.
+
+## Example Scenario to Automate
+Our test covers the specific workflow of opening the login page, creating a new user and logging out.
+
+### Login Page
+![Login Page](images/LoginPage.png)
+
+### Add User Page
+![Add User Page](images/AddUserPage.png)
+
+### Contact List
+![Contact List Page](images/ContactListPage.png)
 
 ## Running the tests under Maven
 
-The template project comes with both Maven and Gradle build scripts. To run the tests with Maven, open a command window and run:
+To run the tests with Maven, open a command window and run:
 
-  ./mvnw clean verify
-
-## Use Gradle
-
-For GRADLE, pen a command window and run:
-
-  ./gradlew test 
+```
+./mvnw clean verify
+```
 
 ## Viewing the reports
 
-Both of the commands provided above will produce a Serenity test report in the `target/site/serenity` directory. Go take a look!
+Serenity test reports are located in the `target/site/serenity` directory.
+
+## Resources
+
+Hopefully soon we will have a Youtube demo and Blog tutorial posted.
