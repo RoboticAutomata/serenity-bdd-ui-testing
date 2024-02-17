@@ -10,12 +10,13 @@ An example UI Test Automation using Serenity, Cucumber and the Page Object Model
       * [Login Page](#login-page)
       * [Add User Page](#add-user-page)
       * [Contact List](#contact-list)
+   * [Project Structure](#project-structure)
    * [Running the tests under Maven](#running-the-tests-under-maven)
    * [Viewing the reports](#viewing-the-reports)
    * [Resources](#resources)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: rashad, at: Sat Feb 17 06:26:41 PM EST 2024 -->
+<!-- Added by: rashad, at: Sat Feb 17 06:47:46 PM EST 2024 -->
 
 <!--te-->
 
@@ -35,6 +36,30 @@ Our test covers the specific workflow of opening the login page, creating a new 
 ### Contact List
 ![Contact List Page](images/ContactListPage.png)
 
+
+## Project Structure
+```
+src/test/resources/features
+└── registration
+    └── user_registration.feature
+```
+
+```
+src/test/java/starter
+├── actions
+│   ├── AddUserSteps.java
+│   ├── ContactListSteps.java
+│   └── LoginSteps.java
+├── CucumberTestSuite.java
+├── pageobjects
+│   ├── AddUserPage.java
+│   ├── ContactListPage.java
+│   └── LoginPage.java
+└── steps
+    ├── AddUserStepDefinitions.java
+    ├── ContactListStepDefinitions.java
+    └── LoginStepDefinitions.java
+```
 ## Running the tests under Maven
 
 To run the tests with Maven, open a command window and run:
