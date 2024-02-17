@@ -7,6 +7,7 @@ import java.time.Duration;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.steps.UIInteractionSteps;
 import starter.pageobjects.LoginPage;
+import starter.pageobjects.AddUserPage;
 
 public class LoginSteps extends UIInteractionSteps  {
     LoginPage loginPage;
@@ -21,8 +22,8 @@ public class LoginSteps extends UIInteractionSteps  {
     @Step("User navigates to Add User Page")
     public void signUp() {
         find(loginPage.SIGNUP_BUTTON).click();
-//        withTimeoutOf(Duration.ofSeconds(10))
-//                .waitFor(presenceOfElementLocated(SearchForm.ARTICLE_HEADINGS));    
+        withTimeoutOf(Duration.ofSeconds(10))
+          .waitFor(presenceOfElementLocated(AddUserPage.SUBMIT_BUTTON));    
         }
     
     
