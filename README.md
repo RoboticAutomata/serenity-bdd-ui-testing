@@ -1,6 +1,6 @@
-# UI Test Automation with Serenity BDD
+# UI Test Automation with Serenity BDD (Selenium / Cucumber)
 
-An example UI Test Automation using Serenity, Cucumber and the Page Object Model.
+An example UI Test Automation using Serenity (Selenium), Cucumber and the Page Object Model.
 
 
 <!--ts-->
