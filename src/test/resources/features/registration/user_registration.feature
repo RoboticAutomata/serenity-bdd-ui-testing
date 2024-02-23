@@ -4,5 +4,5 @@ Feature: User Registration
   @dev
   Scenario: Create a new user
     Given I navigate to the login page
-		Given I create a new user
-		Then I log out
+    Given I create a new user
+    Then I log out
