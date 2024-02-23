@@ -7,17 +7,16 @@ import starter.actions.LoginSteps;
 
 public class AddUserStepDefinitions {
 
-	
-    @Steps
-    LoginSteps login;
-    
-    @Steps
-    AddUserSteps addUser;
+	@Steps
+	LoginSteps login;
 
-    @Given("I create a new user")
-    public void i_create_a_new_user() {
-        login.signUp();
-        addUser.createNewUser();
-    }
+	@Steps
+	AddUserSteps addUser;
+
+	@Given("I create a new user")
+	public void i_create_a_new_user() {
+		login.signUp();
+		addUser.createNewUser();
+	}
 
 }

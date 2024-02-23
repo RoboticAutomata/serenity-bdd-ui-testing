@@ -6,11 +6,11 @@ import starter.actions.LoginSteps;
 
 public class LoginStepDefinitions {
 
-    @Steps
-    LoginSteps login;
+	@Steps
+	LoginSteps login;
 
-    @Given("I navigate to the login page")
-    public void i_navigate_to_the_login_page() {
-        login.openLoginPage();
-    }
+	@Given("I navigate to the login page")
+	public void i_navigate_to_the_login_page() {
+		login.openLoginPage();
+	}
 }
