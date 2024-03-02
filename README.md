@@ -74,4 +74,5 @@ Serenity test reports are located in the `target/site/serenity` directory.
 
 ## Resources
 
-Hopefully soon we will have a Youtube demo and Blog tutorial posted.
+- [Youtube Demo Video](https://youtu.be/PmX_xFgO6Pc?feature=shared)
+- [Medium Blog Tutorial](https://medium.com/@RoboticAutomata/ui-test-automation-tutorial-with-serenity-bdd-96187d29fbe7)
